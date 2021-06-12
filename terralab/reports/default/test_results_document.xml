@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<odoo>
+  <template id="terralab.test_results_document">
+    <t t-call="web.external_layout">
+      <div class="page">
+        <xpath expr="." position="inside">
+          <link rel="stylesheet" href="/terralab/static/src/css/terralab.css"/>
+        </xpath>
+
+        <!-- Print report in recipient's language -->
+        <t t-set="order" t-value="order.with_context(lang=order.partner_id.lang)" />
+
+        <div class="terralab-title bg-primary p-3 mt-3">
+          <div class="row">
+            <div class="col-6 text-left">
+              TerraLab Results Report
+            </div>
+            <div class="col-6 text-right">
+              <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d')"/>
+            </div>
+          </div>
+        </div>
+
+        <!-- Report content -->
+        <div class="mt-3">
+          <div>Order number: <t t-esc="order.name"/></div>
+          <div>Customer: <t t-esc="order.partner_id.name"/> (<t t-esc="order.partner_id.lang"/>)</div>
+          <div>Number of samples: <t t-esc="len(order.terralab_submitted_samples)"/></div>
+        </div>
+
+        <div class="mt-3">
+          <t t-esc="order.terralab_report_text_1"/>
+        </div>
+
+        <div class="mt-3">
+          <t t-esc="order.terralab_report_text_2"/>
+        </div>
+
+        <div class="mt-4">
+          <ul class="list-group">
+            <t t-set="index" t-value="0"/>
+            <t t-foreach="order.terralab_submitted_samples" t-as="submitted_sample">
+
+              <!-- Submitted Sample -->
+              <t t-set="index" t-value="index + 1"/>
+              <li class="list-group-item">
+                <div class="keep-together">
+                  <div class="font-weight-bold text-center">
+                    Sample <t t-esc="index"/>: <t t-esc="submitted_sample.sample_type.name"/>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-6">
+                      <div>Sample ID: <t t-esc="submitted_sample.sample_id"/></div>
+                      <div>Sample Type: <t t-esc="submitted_sample.sample_type.name"/></div>
+                      <div>Sample Volume: <t t-esc="submitted_sample.volume"/></div>
+                      <div>Date of Order: <span t-field="order.create_date" t-options='{"format": "yyyy-MM-dd"}'/></div>
+                      <div>Sample Location: <t t-esc="submitted_sample.location"/></div>
+                    </div>
+                    <div class="col-6">
+                      <div>Date of Sample Preparation: <span t-field="order.terralab_submitted_date" t-options='{"format": "yyyy-MM-dd"}'/></div>
+                      <div>Date of Analysis: <span t-field="order.terralab_calculated_date" t-options='{"format": "yyyy-MM-dd"}'/></div>
+                      <div>Report Print Out Date and User: <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d')"/> <span t-esc="user.name" /></div>
+                      <div>Report Creation Date: <span t-field="order.terralab_validated_date" t-options='{"format": "yyyy-MM-dd"}'/></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-3 p-1">
+
+                  <t t-foreach="submitted_sample.test_products" t-as="test_product">
+                    <!-- Submitted Tests -->
+                    <div class="keep-together">
+                      <h5 class="mt-3"><span t-field="test_product.name"/></h5>
+                      <ul class="list-group">
+                        <t t-foreach="submitted_sample.submitted_tests" t-as="submitted_test">
+                          <t t-if="submitted_test.order_line.product_id.id == test_product.id">
+                          <li class="list-group-item">
+                            <div class="">
+                              <div class="row">
+                                <div class="col-6">
+                                  <span t-field="submitted_test.test_type.name"/>
+                                </div>
+                                <div class="col-6">
+                                  <span t-field="submitted_test.test_result"/> <span t-field="submitted_test.test_result_uom_name"/>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          </t>
+                        </t>
+                      </ul>
+                    </div>
+                    <!-- End of Submitted Tests -->
+                  </t>
+
+                  <t t-foreach="submitted_sample.target_use_ranges" t-as="target_use_range">
+                    <!-- Target Use -->
+                    <div class="mt-4 keep-together">
+                      <h5>Target use: <span t-field="target_use_range.target_use.name"/> (<span t-field="target_use_range.test_type.name"/>)</h5>
+                      <ul class="list-group">
+                        <li class="list-group-item">
+
+                          <t t-if="target_use_range.num_thresholds == 5">
+                            <div class="row">
+                              <div class="col-2 font-weight-bold">Elements</div>
+                              <div class="col-2 font-weight-bold">Very low (<span t-field="target_use_range.threshold_1"/>)</div>
+                              <div class="col-2 font-weight-bold">Low (<span t-field="target_use_range.threshold_2"/>)</div>
+                              <div class="col-2 font-weight-bold">Media (<span t-field="target_use_range.threshold_3"/>)</div>
+                              <div class="col-2 font-weight-bold">High (<span t-field="target_use_range.threshold_4"/>)</div>
+                              <div class="col-2 font-weight-bold">Very high (<span t-field="target_use_range.threshold_5"/>)</div>
+                            </div>
+                          </t>
+                          <t t-else="">
+                            <div class="row">
+                              <div class="col-2 font-weight-bold">Elements</div>
+                              <div class="col-2 font-weight-bold"></div>
+                              <div class="col-2 font-weight-bold">Low (<span t-field="target_use_range.threshold_2"/>)</div>
+                              <div class="col-2 font-weight-bold">Media (<span t-field="target_use_range.threshold_3"/>)</div>
+                              <div class="col-2 font-weight-bold">High (<span t-field="target_use_range.threshold_4"/>)</div>
+                              <div class="col-2 font-weight-bold"></div>
+                            </div>
+                          </t>
+                        </li>
+
+                        <t t-foreach="submitted_sample.submitted_tests" t-as="submitted_test">
+                          <t t-if="submitted_test.test_type.id == target_use_range.test_type.id">
+                            <t t-set="result" t-value="float(submitted_test.test_result)"/>
+                            <li class="list-group-item">
+                              <div class="">
+                                <div class="row">
+                                  <div class="col-2">
+                                    <span t-field="submitted_test.test_type.name"/> (<t t-esc="result"/> <t t-esc="submitted_test.test_result_uom_name"/>)
+                                  </div>
+                                  <t t-if="target_use_range.num_thresholds == 5">
+                                    <!-- Very low -->
+                                    <div class="col-2">
+                                      <t t-if="result &lt; target_use_range.threshold_1">X</t>
+                                    </div>
+                                    <!-- Low -->
+                                    <div class="col-2">
+                                      <t t-if="target_use_range.threshold_1 &lt;= result and result &lt; target_use_range.threshold_2">X</t>
+                                    </div>
+                                    <!-- Media -->
+                                    <div class="col-2">
+                                      <t t-if="target_use_range.threshold_2 &lt;= result and result &lt;= target_use_range.threshold_4">X</t>
+                                    </div>
+                                    <!-- High -->
+                                    <div class="col-2">
+                                      <t t-if="target_use_range.threshold_4 &gt; result and result &gt;= target_use_range.threshold_5">X</t>
+                                    </div>
+                                    <!-- Very high -->
+                                    <div class="col-2">
+                                      <t t-if="result &gt; target_use_range.threshold_5">X</t>
+                                    </div>
+                                  </t>
+                                  <t t-else="">
+                                    <div class="col-2">
+                                    </div>
+                                    <!-- Low -->
+                                    <div class="col-2">
+                                      <t t-if="result &lt; target_use_range.threshold_2">X</t>
+                                    </div>
+                                    <!-- Media -->
+                                    <div class="col-2">
+                                      <t t-if="target_use_range.threshold_2 &lt;= result and result &lt;= target_use_range.threshold_4">X</t>
+                                    </div>
+                                    <!-- High -->
+                                    <div class="col-2">
+                                      <t t-if="result &gt; target_use_range.threshold_4">X</t>
+                                    </div>
+                                    <div class="col-2">
+                                    </div>
+                                  </t>
+                                </div>
+                              </div>
+                            </li>
+                          </t>
+                        </t>
+
+                      </ul>
+                    </div>
+                    <!-- End Target Use -->
+                  </t>
+
+                </div>
+              </li>
+
+
+              <!-- End of Submitted Sample -->
+
+            </t>
+          </ul>
+        </div>
+
+        <div class="mt-5 keep-together">
+          <t t-esc="order.terralab_report_text_3"/>
+        </div>
+
+        <div class="mt-3 keep-together">
+          <t t-esc="order.terralab_report_text_4"/>
+        </div>
+
+        <!-- End report content -->
+      </div>
+    </t>
+  </template>
+</odoo>

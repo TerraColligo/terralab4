@@ -1,0 +1,20 @@
+<odoo>
+  <data>
+
+    <!-- Module categories defined here https://github.com/odoo/odoo/blob/cd9c071c9357cef14635ef094a9f14fc5431956c/odoo/addons/base/data/ir_module_category_data.xml -->
+
+    <record id="terralab.user_group" model="res.groups">
+      <field name="name">TerraLab User</field>
+      <field name="category_id" ref="base.module_category_specific_industry_applications" />
+      <field name="implied_ids" eval="[(4,ref('base.group_user'))]" />
+    </record>
+
+    <record id="terralab.admin_group" model="res.groups">
+      <field name="name">TerraLab Admin</field>
+      <field name="category_id" ref="base.module_category_specific_industry_applications" />
+      <field name="implied_ids" eval="[(4,ref('terralab.user_group'))]" />
+      <field name="users" eval="[(4, ref('base.user_admin'))]" />
+    </record>
+
+  </data>
+</odoo>

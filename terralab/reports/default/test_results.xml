@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<odoo>
+  <!-- Report definition -->
+  <report id="action_terralab_test_results" string="TerraLab Default Test Results" model="sale.order" report_type="qweb-pdf" name="terralab.test_results" menu="True" print_report_name="'TerraLab Test Results %s %s' % ((object.terralab_validated_date or object.create_date).strftime('%Y-%m-%d'), object.name)" />
+
+  <!-- Report content -->
+  <template id="terralab.test_results">
+    <t t-call="web.html_container">
+      <t t-foreach="docs" t-as="order">
+        <!-- Render separate document template so that translations work -->
+        <t t-call="terralab.test_results_document" t-lang="order.partner_id.lang"/>
+      </t>
+    </t>
+  </template>
+</odoo>

@@ -1,0 +1,313 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* terralab_lanisaf
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-10 15:53+0000\n"
+"PO-Revision-Date: 2021-06-10 11:04-0500\n"
+"Last-Translator: Ossi Mäntylahti <ossi.mantylahti@terracolligo.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_MX\n"
+"X-Generator: Poedit 3.0\n"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.order_confirmation
+msgid "&amp;nbsp;<span>on</span>&amp;nbsp;"
+msgstr "&amp;nbsp;<span>en</span>&amp;nbsp;"
+
+#. module: terralab_lanisaf
+#: model:ir.actions.report,print_report_name:terralab_lanisaf.action_terralab_lanisaf_order_confirmation
+msgid ""
+"'TerraLab Order Confirmation %s %s' % ((object.create_date).strftime('%Y-"
+"%m-%d'), object.name)"
+msgstr ""
+"'TerraLab confirmación del pedido %s %s' % ((object.create_date)."
+"strftime('%Y-%m-%d'), object.name)"
+
+#. module: terralab_lanisaf
+#: model:ir.actions.report,print_report_name:terralab_lanisaf.action_terralab_lanisaf_test_results
+msgid ""
+"'TerraLab Test Results %s %s' % ((object.terralab_validated_date or "
+"object.create_date).strftime('%Y-%m-%d'), object.name)"
+msgstr ""
+"'TerraLab Resultados %s %s' % ((object.terralab_validated_date or object."
+"create_date).strftime('%Y-%m-%d'), object.name)"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.test_results_document
+msgid "(INVALID)"
+msgstr "(INVÁLIDO)"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.order_confirmation
+msgid "<span>Disc.(%)</span>"
+msgstr "<span>Desc.(%)</span>"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.order_confirmation
+msgid "<strong class=\"mr16\">Subtotal</strong>"
+msgstr "<strong class=\"mr16\">Total parcial</strong>"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.order_confirmation
+msgid "<strong>Expiration Date:</strong>"
+msgstr "<strong>Vigente hasta:</strong>"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.order_confirmation
+msgid "<strong>Fiscal Position Remark:</strong>"
+msgstr "<strong>Observación de la posición fiscal:</strong>"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.order_confirmation
+msgid "<strong>Payment Terms:</strong>"
+msgstr "<strong>Términos de pago:</strong>"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.order_confirmation
+msgid "<strong>Quotation Date:</strong>"
+msgstr "<strong>Fecha de presupuesto:</strong>"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.order_confirmation
+msgid "<strong>Salesperson:</strong>"
+msgstr "<strong>Comercial:</strong>"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.order_confirmation
+msgid "<strong>Shipping address:</strong>"
+msgstr "<strong>Dirección de la entrega:</strong>"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.order_confirmation
+msgid "<strong>Signature</strong>"
+msgstr "<strong>Firma</strong>"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.order_confirmation
+msgid "<strong>Subtotal</strong>"
+msgstr "<strong>Subtotal</strong>"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.order_confirmation
+msgid "<strong>Total</strong>"
+msgstr "<strong>Total</strong>"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.order_confirmation
+msgid "<strong>Your Reference:</strong>"
+msgstr "<strong>Su referencia:</strong>"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.order_confirmation
+msgid "Amount"
+msgstr "Total"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.test_results_document
+msgid "Código: <b>LAN-SGC-P18-F01</b>"
+msgstr "Código: <b>LAN-SGC-P18-F01</b>"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.test_results_document
+msgid "Date of analysis:"
+msgstr "Fecha del análisis:"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.test_results_document
+msgid "Date of order:"
+msgstr "Fecha del pedido:"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.test_results_document
+msgid "Date of sample preparation:"
+msgstr "Fecha de preparación de la muestra:"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.order_confirmation
+msgid "Description"
+msgstr "Descripción"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.test_results_document
+msgid "Elements"
+msgstr "Elementos"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.test_results_document
+msgid "High ("
+msgstr "Alto ("
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.test_results_document
+msgid "Informe de resultados"
+msgstr "Informe de resultados"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.order_confirmation
+msgid "Invoicing address:"
+msgstr "Dirección de facturación:"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.order_confirmation
+msgid "Invoicing and shipping address:"
+msgstr "Direcciónes de entrega y facturación:"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.test_results_document
+msgid ""
+"LABORATORIO NACIONAL DE INVESTIGACIÓN SERVICIO AGROALIMENTARIO Y FORESTAL"
+msgstr ""
+"LABORATORIO NACIONAL DE INVESTIGACIÓN SERVICIO AGROALIMENTARIO Y FORESTAL"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.test_results_document
+msgid "Low ("
+msgstr "Bajo ("
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.test_results_document
+msgid "Media ("
+msgstr "Media ("
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.test_results_document
+msgid "Number of samples:"
+msgstr "Número de muestras:"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.order_confirmation
+msgid "Order #"
+msgstr "Pedido #"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.order_confirmation
+msgid "Order Confirmation"
+msgstr "Confirmación del pedido"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.test_results_document
+msgid "Page <b>1</b> of <b>1</b>"
+msgstr "Página <b>1</b> de <b>1</b>"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.order_confirmation
+msgid "Pro-Forma Invoice #"
+msgstr "Factura Pro-forma #"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.order_confirmation
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.order_confirmation
+msgid "Quotation #"
+msgstr "Presupuesto #"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.test_results_document
+msgid "Report creation date:"
+msgstr "Fecha de creación del informe:"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.test_results_document
+msgid "Report print out date and user:"
+msgstr "Fecha de impresión del informe y usuario:"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.test_results_document
+msgid "Results"
+msgstr "Resultados"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.test_results_document
+msgid "Sample"
+msgstr "Muestra"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.test_results_document
+msgid "Sample ID:"
+msgstr "ID de la muestra:"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.test_results_document
+msgid "Sample location:"
+msgstr "Ubicación de la muestra:"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.test_results_document
+msgid "Sample type:"
+msgstr "Tipo de muestra:"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.test_results_document
+msgid "Sample volume:"
+msgstr "Volumen de la muestra:"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.test_results_document
+msgid "Target use:"
+msgstr "Uso objetivo:"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.order_confirmation
+msgid "Taxes"
+msgstr "Impuestos"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.common_header
+msgid "TerraLab"
+msgstr "TerraLab"
+
+#. module: terralab_lanisaf
+#: model:ir.actions.report,name:terralab_lanisaf.action_terralab_lanisaf_order_confirmation
+msgid "TerraLab LANISAF Order Confirmation"
+msgstr "TerraLab LANISAF Confirmación de pedido"
+
+#. module: terralab_lanisaf
+#: model:ir.actions.report,name:terralab_lanisaf.action_terralab_lanisaf_test_results
+msgid "TerraLab LANISAF Test Results"
+msgstr "TerraLab LANISAF Resultados de la pruebas"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.order_confirmation
+msgid "Total Price"
+msgstr "Precio total"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.test_results_document
+msgid "UNIVERSIDAD AUTÓNOMA CHAPINGO"
+msgstr "UNIVERSIDAD AUTÓNOMA CHAPINGO"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.order_confirmation
+msgid "Unit Price"
+msgstr "Precio unitario"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.test_results_document
+msgid "Version: <b>01</b>"
+msgstr "Version: <b>01</b>"
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.test_results_document
+msgid "Very high ("
+msgstr "Myu alto ("
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.test_results_document
+msgid "Very low ("
+msgstr "Muy bajo ("
+
+#. module: terralab_lanisaf
+#: model_terms:ir.ui.view,arch_db:terralab_lanisaf.test_results_document
+msgid "Workplace:"
+msgstr "Lugar de trabajo:"

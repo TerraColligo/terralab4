@@ -1,0 +1,111 @@
+<odoo>
+  <data>
+
+    <!-- Views for managing TerraLab Submitted Tests -->
+    <!-- This is the Mass Edit Tests and Variables view -->
+    <record model="ir.ui.view" id="terralab.submitted_test_tree">
+      <field name="name">terralab.submittedtest.tree</field>
+      <field name="model">terralab.submittedtest</field>
+      <field name="arch" type="xml">
+        <tree editable="bottom" create="0" delete="0">
+          <field name="order" readonly="1"/>
+          <field name="order_terralab_status" string="Status" readonly="1"/>
+          <field name="submitted_sample" readonly="1"/>
+          <field name="test_type" readonly="1"/>
+          <field name="test_result"/>
+          <field name="test_result_uom_name"/>
+          <field name="var_1_type" readonly="1"/>
+          <field name="var_1_value"/>
+          <field name="var_2_type" readonly="1"/>
+          <field name="var_2_value"/>
+          <field name="var_3_type" readonly="1"/>
+          <field name="var_3_value"/>
+          <field name="var_4_type" readonly="1"/>
+          <field name="var_4_value"/>
+          <field name="var_5_type" readonly="1"/>
+          <field name="var_5_value"/>
+          <field name="var_6_type" readonly="1"/>
+          <field name="var_6_value"/>
+          <field name="var_7_type" readonly="1"/>
+          <field name="var_7_value"/>
+          <field name="var_8_type" readonly="1"/>
+          <field name="var_8_value"/>
+          <field name="var_9_type" readonly="1"/>
+          <field name="var_9_value"/>
+          <field name="var_10_type" readonly="1"/>
+          <field name="var_10_value"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- Filters and Group By settings for Mass Editing -->
+    <!-- This issue prevents multiple group_by fields: https://github.com/odoo/odoo/issues/33149 -->
+    <record id="terralab.submitted_test_filter" model="ir.ui.view">
+      <field name="name">terralab.submittedtest.filter</field>
+      <field name="model">terralab.submittedtest</field>
+      <field name="arch" type="xml">
+        <search>
+          <field name="order" string="Order"/>
+          <field name="order_partner_name" string="Order Partner Name"/>
+          <field name="order_date" string="Order Date"/>
+          <field name="submitted_sample" string="Sample"/>
+          <field name="submitted_sample_name" string="Sample Name"/>
+          <field name="submitted_sample_id" string="Sample ID"/>
+          <field name="submitted_sample_serial_number" string="Sample Serial Number"/>
+          <field name="submitted_sample_create_date" string="Sample Create Date"/>
+          <field name="submitted_sample_receive_date" string="Sample Receive Date"/>
+          <field name="submitted_sample_deadline" string="Sample Create Date"/>
+          <field name="sample_group" string="Sample Group"/>
+          <field name="test_type" string="Test Type"/>
+          <filter name="terralab_missing_result" string="Missing Results" domain="[('test_result','=',False)]" help="Missing Results"/>
+          <filter name="terralab_draft" string="Order Status Draft" domain="[('order_terralab_status','=','draft')]" help="Draft"/>
+          <filter name="terralab_submitted" string="Order Status Submitted" domain="[('order_terralab_status','=','submitted')]" help="Submitted"/>
+          <filter name="terralab_rejected" string="Order Status Rejected" domain="[('order_terralab_status','=','rejected')]" help="Rejected"/>
+          <filter name="terralab_accepted" string="Order Status Accepted" domain="[('order_terralab_status','=','accepted')]" help="Accepted"/>
+          <filter name="terralab_calculated" string="Order Status Calculated" domain="[('order_terralab_status','=','calculated')]" help="Calculated"/>
+          <filter name="terralab_validated" string="Order Status Validated" domain="[('order_terralab_status','=','validated')]" help="Validated"/>
+          <filter name="terralab_completed" string="Order Status Completed" domain="[('order_terralab_status','=','completed')]" help="Completed"/>
+          <filter name="group_by_sample" string="Sample" context="{'group_by': 'sample_group'}"/>
+          <filter name="group_by_test_type" string="Test Type" context="{'group_by': 'test_type_name'}"/>
+        </search>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="terralab.submitted_test_form">
+      <field name="name">terralab.submittedtest.form</field>
+      <field name="model">terralab.submittedtest</field>
+      <field name="arch" type="xml">
+        <form string="Submitted Test Form">
+          <header>
+            <button name="action_terralab_calculate" string="Calculate TerraLab Test Result" type="object"/>
+          </header>
+          <sheet>
+            <notebook position="inside">
+              <page string="Submitted Test Settings">
+                <group name="submitted_test_settings">
+                  <field name="test_type"/>
+                  <field name="test_result"/>
+                  <field name="test_result_uom_name"/>
+                </group>
+              </page>
+              <page string="Submitted Test Variables" name="terralab_submitted_test_variables">
+                <field name="submitted_test_variables" widget="one2many" mode="tree,kanban">
+                  <tree string="TerraLab Submitted Test Variables">
+                    <field name="submitted_sample" />
+                    <field name="test_variable_type" />
+                    <field name="value" />
+                  </tree>
+                </field>
+              </page>
+            </notebook>
+          </sheet>
+          <div class="oe_chatter">
+            <field name="message_follower_ids" widget="mail_followers"/>
+            <field name="message_ids" widget="mail_thread"/>
+          </div>
+        </form>
+      </field>
+    </record>
+
+  </data>
+</odoo>

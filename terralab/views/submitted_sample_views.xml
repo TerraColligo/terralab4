@@ -1,0 +1,80 @@
+<odoo>
+  <data>
+
+    <!-- Views for managing TerraLab Submitted Samples -->
+    <record model="ir.ui.view" id="terralab.submitted_sample_tree">
+      <field name="name">terralab.submittedsample.tree</field>
+      <field name="model">terralab.submittedsample</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="order"/>
+          <field name="sample_type"/>
+          <field name="num" />
+          <field name="name" />
+          <field name="sample_id" string="Sample ID" />
+          <field name="status" />
+          <field name="create_date" />
+          <field name="receive_date" />
+          <field name="deadline" />
+          <field name="target_use_ranges" />
+          <field name="area" />
+          <field name="volume" />
+          <field name="location" />
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="terralab.submitted_sample_form">
+      <field name="name">terralab.submittedsample.form</field>
+      <field name="model">terralab.submittedsample</field>
+      <field name="arch" type="xml">
+        <form string="Submitted Sample Form">
+          <sheet>
+            <notebook position="inside">
+
+              <page string="Sample">
+                <group name="submitted_sample">
+                  <field name="sample_type"/>
+                  <field name="name" />
+                  <field name="sample_id" string="Sample ID" />
+                  <field name="serial_number" />
+                  <field name="status" />
+                  <field name="create_date" />
+                  <field name="receive_date" />
+                  <field name="deadline" />
+                  <field name="area" />
+                  <field name="volume" />
+                  <field name="location" />
+                </group>
+              </page>
+
+              <page string="Test Products" name="terralab_submitted_sample_test_products">
+                <field name="test_products" string="Test Products" widget="many2many" mode="tree,kanban">
+                  <tree string="Test Products" editable="bottom">
+                    <field name="name" string="Product Name" readonly="1"/>
+                    <field name="terralab_test_types" readonly="1"/>
+                  </tree>
+                </field>
+              </page>
+
+              <page string="Target Use Ranges" name="terralab_submitted_sample_target_use_ranges">
+                <field name="target_use_ranges" string="Target Use Ranges" widget="many2many" mode="tree,kanban">
+                  <tree string="Target Use Ranges" editable="bottom">
+                    <field name="target_use" readonly="1"/>
+                    <field name="test_type" readonly="1"/>
+                  </tree>
+                </field>
+              </page>
+
+            </notebook>
+            <div class="oe_chatter">
+              <field name="message_follower_ids" widget="mail_followers"/>
+              <field name="message_ids" widget="mail_thread"/>
+            </div>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+  </data>
+</odoo>

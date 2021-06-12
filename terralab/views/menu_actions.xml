@@ -1,0 +1,106 @@
+<odoo>
+  <data>
+
+    <!-- Menu action: TerraLab Orders -->
+    <record model="ir.actions.act_window" id="terralab.orders_list_action">
+      <field name="name">Terralab Orders</field>
+      <field name="res_model">sale.order</field>
+      <field name="view_mode">tree,form</field>
+      <field name="domain">[("terralab_status", "!=", False)]</field>
+      <field name="view_id" ref="terralab.order_tree"/>
+    </record>
+
+    <!-- Menu action: TerraLab Products -->
+    <record model="ir.actions.act_window" id="terralab.products_list_action">
+      <field name="name">TerraLab Products</field>
+      <field name="res_model">product.template</field>
+      <field name="view_mode">tree,form</field>
+      <field name="domain">[("terralab_test_types_count", ">", 0)]</field>
+      <field name="view_id" ref="terralab.product_tree"/>
+    </record>
+
+    <!-- Menu action: TerraLab Categories -->
+    <record model="ir.actions.act_window" id="terralab.categories_list_action">
+      <field name="name">TerraLab Categories</field>
+      <field name="res_model">product.category</field>
+      <field name="view_mode">tree,form</field>
+      <field name="domain">[("terralab_spreadsheet", "!=", False)]</field>
+      <field name="view_id" ref="terralab.categories_tree"/>
+    </record>
+
+    <!-- Menu action: Samples -->
+    <record model="ir.actions.act_window" id="terralab.sample_types_list_action">
+      <field name="name">TerraLab Sample Types</field>
+      <field name="res_model">terralab.sampletype</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menu action: Tests -->
+    <record model="ir.actions.act_window" id="terralab.test_types_list_action">
+      <field name="name">TerraLab Test Types</field>
+      <field name="res_model">terralab.testtype</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menu action: Spreadsheets -->
+    <record model="ir.actions.act_window" id="terralab.spreadsheets_list_action">
+      <field name="name">TerraLab Spreadsheets</field>
+      <field name="res_model">terralab.spreadsheet</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menu action: Target Use -->
+    <record model="ir.actions.act_window" id="terralab.target_use_list_action">
+      <field name="name">TerraLab Target Use</field>
+      <field name="res_model">terralab.targetuse</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menu action: Mass Edit / Tests Grouped by Test Type -->
+    <record model="ir.actions.act_window" id="terralab.mass_edit_tests_grouped_by_test_type_action">
+      <field name="name">TerraLab Mass Edit Tests</field>
+      <field name="res_model">terralab.submittedtest</field>
+      <field name="view_mode">tree,form</field>
+      <field name="search_view_id" ref="terralab.submitted_test_filter"/>
+      <field name="context">{'search_default_group_by_test_type': 1}</field>
+    </record>
+
+    <!-- Menu action: Mass Edit / Tests Grouped by Order and Sample -->
+    <record model="ir.actions.act_window" id="terralab.mass_edit_tests_grouped_by_sample_action">
+      <field name="name">TerraLab Mass Edit Tests</field>
+      <field name="res_model">terralab.submittedtest</field>
+      <field name="view_mode">tree,form</field>
+      <field name="search_view_id" ref="terralab.submitted_test_filter"/>
+      <field name="context">{'search_default_group_by_sample': 1}</field>
+    </record>
+
+    <!-- Menu action: Debugging / All Submitted Samples -->
+    <record model="ir.actions.act_window" id="terralab.submitted_samples_list_action">
+      <field name="name">All TerraLab Submitted Samples</field>
+      <field name="res_model">terralab.submittedsample</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menu action: Debugging / All Submitted Tests -->
+    <record model="ir.actions.act_window" id="terralab.submitted_tests_list_action">
+      <field name="name">All TerraLab Submitted Tests</field>
+      <field name="res_model">terralab.submittedtest</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menu action: Debugging / All Submitted Test Variables -->
+    <record model="ir.actions.act_window" id="terralab.submitted_test_variables_list_action">
+      <field name="name">All TerraLab Submitted Test Variables</field>
+      <field name="res_model">terralab.submittedtestvariable</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menu action: Debugging / All Test Variable Types -->
+    <record model="ir.actions.act_window" id="terralab.test_variable_types_list_action">
+      <field name="name">All TerraLab Test Variable Types</field>
+      <field name="res_model">terralab.testvariabletype</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+  </data>
+</odoo>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<odoo>
+  <template id="terralab.mass_edit_tests">
+    <t t-call="website.layout">
+    HELLO
+    </t>
+  </template>
+</odoo>

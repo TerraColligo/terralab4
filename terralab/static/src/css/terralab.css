@@ -1,0 +1,13 @@
+.terralab-title {
+  font-size: 200%;
+}
+
+.list-group-item {
+  border-width: 2px;
+}
+
+@media print {
+  .keep-together {
+    page-break-inside: avoid;
+  }
+}

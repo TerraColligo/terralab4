@@ -1,0 +1,107 @@
+.terralab-title {
+  font-size: 200%;
+}
+
+.list-group-item {
+  border-width: 2px;
+}
+
+@media print {
+  .keep-together {
+    page-break-inside: avoid;
+  }
+}
+
+.custom-header {
+  display: flex;
+  border: 1px solid black;
+}
+
+.custom-header__main-area {
+  display: flex;
+  text-align: center;
+  width: 80%;
+  padding: 20px 10px;
+  font-weight: 700;
+}
+
+.custom-header__side-area {
+  width: 20%;
+  border-left: 1px solid black;
+  font-size: 14px;
+}
+
+.custom-header__bottom-area {
+  width: 100%;
+  display: flex;
+}
+
+.custom-header__bottom-area__main-area {
+  width: 80%;
+  text-align: center;
+  font-weight: 700;
+}
+
+.custom-header__logo {
+  width: 40%;
+}
+
+.report-border-bottom {
+  border-bottom: 1px solid black;
+}
+
+.report-border-top {
+  border-top: 1px solid black;
+}
+
+.report-border {
+  border: 1px solid black;
+}
+
+.report-padding {
+  padding: 10px;
+}
+
+.report-side-padding {
+  padding: 0px 10px;
+}
+
+.report-padding-bottom {
+  padding-bottom: 10px;
+}
+
+.report-section-bottom-spacing {
+  margin-bottom: 60px;
+}
+
+.report-right-spacing {
+  margin-right: 16px;
+}
+
+.report-heading {
+  text-align: center;
+  font-weight: 700;
+}
+
+.report-sample-result-ul {
+  list-style-type: none;
+}
+
+.report-text-box {
+  border: 1px solid black;
+  padding: 20px 10px;
+}
+
+.report-test-result-table {
+  width: 100%;
+}
+
+.report-test-result-table th {
+  border: 1px solid black;
+  border-bottom: 0px;
+}
+
+.report-test-result-table td {
+  width: 50%;
+  border: 1px solid black;
+}

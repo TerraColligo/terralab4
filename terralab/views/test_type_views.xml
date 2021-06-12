@@ -1,0 +1,73 @@
+<odoo>
+  <data>
+
+    <!-- Tests -->
+    <record model="ir.ui.view" id="terralab.test_type_tree">
+      <field name="name">terralab.testtype.tree</field>
+      <field name="model">terralab.testtype</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="default_code"/>
+          <field name="name"/>
+          <field name="sample_types"/>
+          <field name="spreadsheet"/>
+          <field name="spreadsheet"/>
+          <field name="test_result_uom_name"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- Test -->
+    <record model="ir.ui.view" id="terralab.test_form_view">
+      <field name="name">TerraLab Test Type</field>
+      <field name="model">terralab.testtype</field>
+      <field name="arch" type="xml">
+        <form string="Test Form">
+          <sheet>
+            <notebook position="inside">
+              <page string="General">
+                <group name="general">
+                  <label for="default_code" string="Code"/>
+                  <div class="o_row" name="default_code">
+                    <field name="default_code"/>
+                  </div>
+                  <label for="name" string="Name"/>
+                  <div class="o_row" name="name">
+                    <field name="name"/>
+                  </div>
+                  <label for="sample_types" string="Sample Types"/>
+                  <div class="o_row" name="sample_types">
+                    <field name="sample_types"/>
+                  </div>
+                  <label for="spreadsheet" string="Spreadsheet"/>
+                  <div class="o_row" name="spreadsheet">
+                    <field name="spreadsheet"/>
+                  </div>
+                  <label for="test_result_uom_name" string="Result Unit"/>
+                  <div class="o_row" name="test_result_uom_name">
+                    <field name="test_result_uom_name"/>
+                  </div>
+                </group>
+              </page>
+              <page string="Test Variable Types" name="test_variable_types">
+                <field name="test_variable_types" widget="one2many" mode="tree,kanban">
+                  <tree string="Test Variable Types" editable="bottom">
+                    <field name="name" string="Variable Name" />
+                    <field name="num" string="Num" />
+                    <field name="spreadsheet" string="Spreadsheet" />
+                  </tree>
+                </field>
+              </page>
+
+            </notebook>
+          </sheet>
+          <div class="oe_chatter">
+            <field name="message_follower_ids" widget="mail_followers"/>
+            <field name="message_ids" widget="mail_thread"/>
+          </div>
+        </form>
+      </field>
+    </record>
+
+  </data>
+</odoo>

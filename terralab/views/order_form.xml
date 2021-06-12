@@ -1,0 +1,144 @@
+<odoo>
+  <data>
+    <!-- Customize Order Form -->
+    <record model="ir.ui.view" id="terralab.order_form_view">
+      <field name="name">TerraLab Order</field>
+      <field name="model">sale.order</field>
+      <field name="inherit_id" ref="sale.view_order_form"/>
+      <field name="priority" eval="15"/>
+      <field name="arch" type="xml">
+        <header>
+          <button name="action_terralab_submit" string="Submit TerraLab Order" type="object" class="oe_highlight" attrs="{'invisible': [('terralab_status', '!=', 'draft')]}"/>
+          <button name="action_terralab_accept" string="Accept TerraLab Order" type="object" class="oe_highlight" attrs="{'invisible': [('terralab_status', '!=', 'submitted')]}"/>
+          <button name="action_terralab_reject" string="Reject TerraLab Order" type="object" attrs="{'invisible': [('terralab_status', '!=', 'submitted')]}"/>
+          <button name="action_terralab_draft" string="Reset to TerraLab Draft" type="object" attrs="{'invisible': [('terralab_status', 'not in', ['submitted', 'rejected'])]}"/>
+          <button name="action_terralab_calculate" string="Calculate TerraLab Test Results" type="object" class="oe_highlight" attrs="{'invisible': [('terralab_status', '!=', 'accepted')]}"/>
+          <button name="action_terralab_calculate" string="Recalculate TerraLab Test Results" type="object" attrs="{'invisible': [('terralab_status', '!=', 'calculated')]}"/>
+          <button name="action_terralab_validate" string="Validate TerraLab Order" type="object" class="oe_highlight" attrs="{'invisible': [('terralab_status', '!=', 'calculated')]}"/>
+          <button name="action_terralab_invalidate" string="Invalidate TerraLab Order" type="object" attrs="{'invisible': [('terralab_status', '!=', 'validated')]}"/>
+          <button name="action_terralab_complete" string="Complete TerraLab Order" type="object" class="oe_highlight" attrs="{'invisible': [('terralab_status', '!=', 'validated')]}"/>
+        </header>
+        <notebook position="inside">
+
+          <page string="TerraLab" name="terralab">
+            <div class="o_horizontal_separator">TerraLab</div>
+            <group name="terralab">
+
+              <label for="terralab_status" string="TerraLab Status"/>
+              <div class="o_row" name="terralab_status">
+                <field name="terralab_status"/>
+              </div>
+
+              <label for="terralab_draft_date" string="Draft Date" attrs="{'invisible':[('terralab_draft_date', '=', False)]}"/>
+              <div class="o_row" name="terralab_draft_date" attrs="{'invisible':[('terralab_draft_date', '=', False)]}">
+                <field name="terralab_draft_date"/>
+              </div>
+
+              <label for="terralab_submitted_date" string="Submitted Date" attrs="{'invisible':[('terralab_submitted_date', '=', False)]}"/>
+              <div class="o_row" name="terralab_submitted_date" attrs="{'invisible':[('terralab_submitted_date', '=', False)]}">
+                <field name="terralab_submitted_date"/>
+              </div>
+
+              <label for="terralab_accepted_date" string="Accepted Date" attrs="{'invisible':[('terralab_accepted_date', '=', False)]}"/>
+              <div class="o_row" name="terralab_accepted_date" attrs="{'invisible':[('terralab_accepted_date', '=', False)]}">
+                <field name="terralab_accepted_date"/>
+              </div>
+
+              <label for="terralab_rejected_date" string="Rejected Date" attrs="{'invisible':[('terralab_rejected_date', '=', False)]}"/>
+              <div class="o_row" name="terralab_rejected_date" attrs="{'invisible':[('terralab_rejected_date', '=', False)]}">
+                <field name="terralab_rejected_date"/>
+              </div>
+
+              <label for="terralab_calculated_date" string="Calculated Date" attrs="{'invisible':[('terralab_calculated_date', '=', False)]}"/>
+              <div class="o_row" name="terralab_calculated_date" attrs="{'invisible':[('terralab_calculated_date', '=', False)]}">
+                <field name="terralab_calculated_date"/>
+              </div>
+
+              <label for="terralab_validated_date" string="Validated Date" attrs="{'invisible':[('terralab_validated_date', '=', False)]}"/>
+              <div class="o_row" name="terralab_validated_date" attrs="{'invisible':[('terralab_validated_date', '=', False)]}">
+                <field name="terralab_validated_date"/>
+              </div>
+
+              <label for="terralab_completed_date" string="Completed Date" attrs="{'invisible':[('terralab_completed_date', '=', False)]}"/>
+              <div class="o_row" name="terralab_completed_date" attrs="{'invisible':[('terralab_completed_date', '=', False)]}">
+                <field name="terralab_completed_date"/>
+              </div>
+
+              <label for="terralab_submitted_samples_count" string="Samples"/>
+              <div class="o_row" name="terralab_submitted_samples_count">
+                <field name="terralab_submitted_samples_count" readonly="1"/>
+              </div>
+
+              <label for="terralab_submitted_tests_count" string="Tests"/>
+              <div class="o_row" name="terralab_submitted_tests_count">
+                <field name="terralab_submitted_tests_count" readonly="1"/>
+              </div>
+
+              <label for="terralab_submitted_test_variables_count" string="Test Variables"/>
+              <div class="o_row" name="terralab_submitted_test_variables_count">
+                <field name="terralab_submitted_test_variables_count" readonly="1"/>
+              </div>
+
+              <label for="terralab_report_text_1" string="Report Text 1"/>
+              <div class="o_row" name="terralab_report_text_1">
+                <field name="terralab_report_text_1"/>
+              </div>
+
+              <label for="terralab_report_text_2" string="Report Text 2"/>
+              <div class="o_row" name="terralab_report_text_2">
+                <field name="terralab_report_text_2"/>
+              </div>
+
+              <label for="terralab_report_text_3" string="Report Text 3"/>
+              <div class="o_row" name="terralab_report_text_3">
+                <field name="terralab_report_text_3"/>
+              </div>
+
+              <label for="terralab_report_text_4" string="Report Text 4"/>
+              <div class="o_row" name="terralab_report_text_4">
+                <field name="terralab_report_text_4"/>
+              </div>
+
+            </group>
+          </page>
+
+          <page string="TerraLab Samples" name="terralab_submitted_samples">
+            <field name="terralab_submitted_samples" widget="one2many" mode="tree,kanban">
+              <tree string="TerraLab Samples">
+                <field name="sample_type" string="Sample Type"/>
+                <field name="sample_id" string="Sample ID"/>
+                <field name="num" string="Number"/>
+                <field name="target_use_ranges" string="Target Use Ranges" optional="show" widget="many2many_tags"/>
+              </tree>
+            </field>
+          </page>
+
+          <page string="TerraLab Tests" name="terralab_submitted_tests">
+            <field name="terralab_submitted_tests" widget="one2many" mode="tree,kanban">
+              <tree string="TerraLab Tests" editable="bottom" create="0" delete="0">
+                <field name="order_line" string="Order Line" readonly="1"/>
+                <field name="submitted_sample" string="Sample" readonly="1"/>
+                <field name="test_type" string="Test" readonly="1"/>
+                <field name="test_result" string="Result"/>
+                <field name="test_result_uom_name" string="Result Unit"/>
+              </tree>
+            </field>
+          </page>
+
+          <page string="TerraLab Test Variables" name="terralab_submitted_test_variables">
+            <field name="terralab_submitted_test_variables" widget="one2many" mode="tree,kanban">
+              <tree string="TerraLab Test Variables" editable="bottom" create="0" delete="0">
+                <field name="submitted_sample" string="Sample" readonly="1"/>
+                <field name="submitted_test" string="Test" readonly="1"/>
+                <field name="test_variable_type" string="Test Variable Type" readonly="1"/>
+                <field name="num" string="Number" readonly="1"/>
+                <field name="value" string="Value"/>
+              </tree>
+            </field>
+          </page>
+
+        </notebook>
+      </field>
+    </record>
+  </data>
+</odoo>

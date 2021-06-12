@@ -1,0 +1,1970 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* terralab
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-10 15:52+0000\n"
+"PO-Revision-Date: 2021-06-10 11:02-0500\n"
+"Last-Translator: Ossi Mäntylahti <ossi.mantylahti@terracolligo.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_MX\n"
+"X-Generator: Poedit 3.0\n"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_confirmation
+msgid "&amp;nbsp;<span>on</span>&amp;nbsp;"
+msgstr "&amp;nbsp;<span>en</span>&amp;nbsp;"
+
+#. module: terralab
+#: model:ir.actions.report,print_report_name:terralab.action_terralab_order_confirmation
+msgid ""
+"'TerraLab Order Confirmation %s %s' % ((object.create_date).strftime('%Y-%m-"
+"%d'), object.name)"
+msgstr ""
+"'TerraLab Confirmacion del pedido %s %s' % ((object.create_date)."
+"strftime('%Y-%m-%d'), object.name)"
+
+#. module: terralab
+#: model:ir.actions.report,print_report_name:terralab.action_terralab_test_results
+msgid ""
+"'TerraLab Test Results %s %s' % ((object.terralab_validated_date or object."
+"create_date).strftime('%Y-%m-%d'), object.name)"
+msgstr ""
+"'TerraLab Resultados %s %s' % ((object.terralab_validated_date or object."
+"create_date).strftime('%Y-%m-%d'), object.name)"
+
+#. module: terralab
+#: code:addons/terralab/models/submitted_test.py:0
+#, python-format
+msgid "(no sample ID)"
+msgstr "(falta ID de muestra)"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_confirmation
+msgid "<span>Disc.(%)</span>"
+msgstr "<span>Desc.(%)</span>"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_confirmation
+msgid "<strong class=\"mr16\">Subtotal</strong>"
+msgstr "<strong class=\"mr16\">Total parcial</strong>"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_confirmation
+msgid "<strong>Expiration Date:</strong>"
+msgstr "<strong>Fecha de caducidad:</strong>"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_confirmation
+msgid "<strong>Fiscal Position Remark:</strong>"
+msgstr "<strong>Posición fiscal:</strong>"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_confirmation
+msgid "<strong>Payment Terms:</strong>"
+msgstr "<strong>Términos de pago:</strong>"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_confirmation
+msgid "<strong>Quotation Date:</strong>"
+msgstr "<strong>Fecha de presupuesto:</strong>"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_confirmation
+msgid "<strong>Salesperson:</strong>"
+msgstr "<strong>Comercial:</strong>"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_confirmation
+msgid "<strong>Shipping address:</strong>"
+msgstr "<strong>Dirección de la entrega:</strong>"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_confirmation
+msgid "<strong>Signature</strong>"
+msgstr "<strong>Firma</strong>"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_confirmation
+msgid "<strong>Subtotal</strong>"
+msgstr "<strong>Subtotal</strong>"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_confirmation
+msgid "<strong>Total</strong>"
+msgstr "<strong>Total</strong>"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_confirmation
+msgid "<strong>Your Reference:</strong>"
+msgstr "<strong>Su referencia:</strong>"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "Accept TerraLab Order"
+msgstr "Acepta el pedido"
+
+#. module: terralab
+#: code:addons/terralab/models/order.py:0
+#, python-format
+msgid "Accept or reject order"
+msgstr "Acepta o rechaza el pedido"
+
+#. module: terralab
+#: code:addons/terralab/models/order.py:0
+#: code:addons/terralab/models/submitted_test.py:0
+#: model:ir.model.fields.selection,name:terralab.selection__sale_order__terralab_status__accepted
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_filter
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_variable_tree_filter
+#, python-format
+msgid "Accepted"
+msgstr "Aceptado"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_sale_order__terralab_accepted_date
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "Accepted Date"
+msgstr "Fecha de aceptación"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_sampletype__message_needaction
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet__message_needaction
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__message_needaction
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__message_needaction
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__message_needaction
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuse__message_needaction
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__message_needaction
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype__message_needaction
+#: model:ir.model.fields,field_description:terralab.field_terralab_testvariabletype__message_needaction
+msgid "Action Needed"
+msgstr "Necesita acción"
+
+#. module: terralab
+#: code:addons/terralab/models/order.py:0
+#, python-format
+msgid "Add at least one submitted sample"
+msgstr "Agregue al menos una muestra"
+
+#. module: terralab
+#: code:addons/terralab/models/submitted_test.py:0
+#, python-format
+msgid "Add submitted test variables for submitted test %s"
+msgstr "Establece los cambiantes para la prueba %s"
+
+#. module: terralab
+#: code:addons/terralab/models/submitted_sample.py:0
+#, python-format
+msgid "Add submitted tests for submitted sample %s"
+msgstr "Elige las pruebas para la muestra %s"
+
+#. module: terralab
+#: code:addons/terralab/models/submitted_test_variable.py:0
+#, python-format
+msgid "Add value for submitted test variable %s"
+msgstr "Establece el valor para el cambiante %s"
+
+#. module: terralab
+#: model:ir.ui.menu,name:terralab.submitted_samples_list_menuitem
+msgid "All Submitted Samples"
+msgstr "Todas las muestras enviados"
+
+#. module: terralab
+#: model:ir.actions.act_window,name:terralab.submitted_samples_list_action
+msgid "All TerraLab Submitted Samples"
+msgstr "Todas las muestras enviados de TerraLab"
+
+#. module: terralab
+#: model:ir.actions.act_window,name:terralab.submitted_test_variables_list_action
+msgid "All TerraLab Submitted Test Variables"
+msgstr "Todas los cambiantes de pruebas"
+
+#. module: terralab
+#: model:ir.actions.act_window,name:terralab.submitted_tests_list_action
+msgid "All TerraLab Submitted Tests"
+msgstr "Todas las muestras enviados"
+
+#. module: terralab
+#: model:ir.actions.act_window,name:terralab.test_variable_types_list_action
+msgid "All TerraLab Test Variable Types"
+msgstr "Todos cambiantes de las pruebas"
+
+#. module: terralab
+#: model:ir.ui.menu,name:terralab.test_variable_types_list_menuitem
+msgid "All Test Variable Types"
+msgstr "Todos cambiantes de las pruebas"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_confirmation
+msgid "Amount"
+msgstr "Total"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__area
+msgid "Area"
+msgstr "Área"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_sampletype__message_attachment_count
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet__message_attachment_count
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__message_attachment_count
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__message_attachment_count
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__message_attachment_count
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuse__message_attachment_count
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__message_attachment_count
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype__message_attachment_count
+#: model:ir.model.fields,field_description:terralab.field_terralab_testvariabletype__message_attachment_count
+msgid "Attachment Count"
+msgstr "Número de anexos"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_form
+msgid "Calculate TerraLab Test Result"
+msgstr "Calcula el resultado"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "Calculate TerraLab Test Results"
+msgstr "Calcula los resultados"
+
+#. module: terralab
+#: code:addons/terralab/models/order.py:0
+#, python-format
+msgid "Calculate test results"
+msgstr "Calcula los resultados"
+
+#. module: terralab
+#: code:addons/terralab/models/order.py:0
+#: code:addons/terralab/models/submitted_test.py:0
+#: model:ir.model.fields.selection,name:terralab.selection__sale_order__terralab_status__calculated
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_filter
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_variable_tree_filter
+#, python-format
+msgid "Calculated"
+msgstr "Calculado"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_sale_order__terralab_calculated_date
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "Calculated Date"
+msgstr "Fecha de calculación"
+
+#. module: terralab
+#: model:ir.ui.menu,name:terralab.categories_list_menuitem
+msgid "Categories"
+msgstr "Categorías"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.categories_tree
+msgid "Category Name"
+msgstr "Nombre de categoría"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.target_use_form_view
+#: model_terms:ir.ui.view,arch_db:terralab.test_form_view
+msgid "Code"
+msgstr "Código"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "Complete TerraLab Order"
+msgstr "Finaliza el pedido"
+
+#. module: terralab
+#: code:addons/terralab/models/order.py:0
+#, python-format
+msgid "Complete order"
+msgstr "Finaliza el pedido"
+
+#. module: terralab
+#: code:addons/terralab/models/order.py:0
+#: code:addons/terralab/models/submitted_test.py:0
+#: model:ir.model.fields.selection,name:terralab.selection__sale_order__terralab_status__completed
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_filter
+#, python-format
+msgid "Completed"
+msgstr "Listo"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_sale_order__terralab_completed_date
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "Completed Date"
+msgstr "Fecha Completada"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_variable_tree_filter
+msgid "Completeds"
+msgstr "Completeds"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_sampletype__create_uid
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet__create_uid
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__create_uid
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__create_uid
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__create_uid
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuse__create_uid
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__create_uid
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype__create_uid
+#: model:ir.model.fields,field_description:terralab.field_terralab_testvariabletype__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_sampletype__create_date
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet__create_date
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__create_date
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__create_date
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__create_date
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuse__create_date
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__create_date
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype__create_date
+#: model:ir.model.fields,field_description:terralab.field_terralab_testvariabletype__create_date
+msgid "Created on"
+msgstr "Creado"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.test_results_document
+msgid "Customer:"
+msgstr "Cliente:"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.test_results_document
+msgid "Date of Analysis:"
+msgstr "Fecha de análisis:"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.test_results_document
+msgid "Date of Order:"
+msgstr "Fecha de pedido:"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.test_results_document
+msgid "Date of Sample Preparation:"
+msgstr "Fecha de preparación de la muestra:"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__deadline
+msgid "Deadline"
+msgstr "Fecha límite"
+
+#. module: terralab
+#: model:ir.ui.menu,name:terralab.debugging_menuitem
+msgid "Debugging"
+msgstr "Debugging"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_sampletype__default_code
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuse__default_code
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype__default_code
+msgid "Default Code"
+msgstr "Código por defecto"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.test_results_document
+msgid "Default Test Results Report"
+msgstr "Informe de resultados de pruebas por defecto"
+
+#. module: terralab
+#: code:addons/terralab/models/spreadsheet/import_demo_orders.py:0
+#, python-format
+msgid "Demo orders generated successfully."
+msgstr "Pedidos demo generado con éxito."
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_confirmation
+msgid "Description"
+msgstr "Descripción"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_sampletype__display_name
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet__display_name
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__display_name
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__display_name
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__display_name
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuse__display_name
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__display_name
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype__display_name
+#: model:ir.model.fields,field_description:terralab.field_terralab_testvariabletype__display_name
+msgid "Display Name"
+msgstr "Nombre"
+
+#. module: terralab
+#: code:addons/terralab/models/order.py:0
+#: code:addons/terralab/models/submitted_test.py:0
+#: model:ir.model.fields.selection,name:terralab.selection__sale_order__terralab_status__draft
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_filter
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_variable_tree_filter
+#, python-format
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_sale_order__terralab_draft_date
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "Draft Date"
+msgstr "Fecha del borrador"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.test_results_document
+msgid "Elements"
+msgstr "Elementos"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.spreadsheet_form
+msgid ""
+"Enter URL like https://docs.google.com/spreadsheets/"
+"d/2xfaDdADadAGkIOwM2m413MdJgewtqblw41bao2vbq2c/edit"
+msgstr ""
+"Establece URL como https://docs.google.com/spreadsheets/"
+"d/2xfaDdADadAGkIOwM2m413MdJgewtqblw41bao2vbq2c/edit"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.spreadsheet_form
+msgid "Enter spreadsheet name"
+msgstr "El nombre de hoja de cálculo"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_sampletype__message_follower_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet__message_follower_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__message_follower_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__message_follower_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__message_follower_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuse__message_follower_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__message_follower_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype__message_follower_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_testvariabletype__message_follower_ids
+msgid "Followers"
+msgstr "Seguidores"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_sampletype__message_channel_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet__message_channel_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__message_channel_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__message_channel_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__message_channel_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuse__message_channel_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__message_channel_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype__message_channel_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_testvariabletype__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Seguidores (canales)"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_sampletype__message_partner_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet__message_partner_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__message_partner_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__message_partner_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__message_partner_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuse__message_partner_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__message_partner_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype__message_partner_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_testvariabletype__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (Partners)"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.target_use_form_view
+#: model_terms:ir.ui.view,arch_db:terralab.test_form_view
+msgid "General"
+msgstr "General"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.spreadsheet_form
+msgid "Generate Demo Orders"
+msgstr "Generar pedidos de demostración"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.mass_edit_tests
+msgid "HELLO"
+msgstr "HOLA"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.test_results_document
+msgid "High ("
+msgstr "Alto ("
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_sampletype__id
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet__id
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__id
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__id
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__id
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuse__id
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__id
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype__id
+#: model:ir.model.fields,field_description:terralab.field_terralab_testvariabletype__id
+msgid "ID"
+msgstr "Id"
+
+#. module: terralab
+#: model:ir.model.fields,help:terralab.field_terralab_sampletype__message_needaction
+#: model:ir.model.fields,help:terralab.field_terralab_sampletype__message_unread
+#: model:ir.model.fields,help:terralab.field_terralab_spreadsheet__message_needaction
+#: model:ir.model.fields,help:terralab.field_terralab_spreadsheet__message_unread
+#: model:ir.model.fields,help:terralab.field_terralab_submittedsample__message_needaction
+#: model:ir.model.fields,help:terralab.field_terralab_submittedsample__message_unread
+#: model:ir.model.fields,help:terralab.field_terralab_submittedtest__message_needaction
+#: model:ir.model.fields,help:terralab.field_terralab_submittedtest__message_unread
+#: model:ir.model.fields,help:terralab.field_terralab_submittedtestvariable__message_needaction
+#: model:ir.model.fields,help:terralab.field_terralab_submittedtestvariable__message_unread
+#: model:ir.model.fields,help:terralab.field_terralab_targetuse__message_needaction
+#: model:ir.model.fields,help:terralab.field_terralab_targetuse__message_unread
+#: model:ir.model.fields,help:terralab.field_terralab_targetuserange__message_needaction
+#: model:ir.model.fields,help:terralab.field_terralab_targetuserange__message_unread
+#: model:ir.model.fields,help:terralab.field_terralab_testtype__message_needaction
+#: model:ir.model.fields,help:terralab.field_terralab_testtype__message_unread
+#: model:ir.model.fields,help:terralab.field_terralab_testvariabletype__message_needaction
+#: model:ir.model.fields,help:terralab.field_terralab_testvariabletype__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "Si está marcado, los mensajes nuevos requieren su atención."
+
+#. module: terralab
+#: model:ir.model.fields,help:terralab.field_terralab_sampletype__message_has_error
+#: model:ir.model.fields,help:terralab.field_terralab_sampletype__message_has_sms_error
+#: model:ir.model.fields,help:terralab.field_terralab_spreadsheet__message_has_error
+#: model:ir.model.fields,help:terralab.field_terralab_spreadsheet__message_has_sms_error
+#: model:ir.model.fields,help:terralab.field_terralab_submittedsample__message_has_error
+#: model:ir.model.fields,help:terralab.field_terralab_submittedsample__message_has_sms_error
+#: model:ir.model.fields,help:terralab.field_terralab_submittedtest__message_has_error
+#: model:ir.model.fields,help:terralab.field_terralab_submittedtest__message_has_sms_error
+#: model:ir.model.fields,help:terralab.field_terralab_submittedtestvariable__message_has_error
+#: model:ir.model.fields,help:terralab.field_terralab_submittedtestvariable__message_has_sms_error
+#: model:ir.model.fields,help:terralab.field_terralab_targetuse__message_has_error
+#: model:ir.model.fields,help:terralab.field_terralab_targetuse__message_has_sms_error
+#: model:ir.model.fields,help:terralab.field_terralab_targetuserange__message_has_error
+#: model:ir.model.fields,help:terralab.field_terralab_targetuserange__message_has_sms_error
+#: model:ir.model.fields,help:terralab.field_terralab_testtype__message_has_error
+#: model:ir.model.fields,help:terralab.field_terralab_testtype__message_has_sms_error
+#: model:ir.model.fields,help:terralab.field_terralab_testvariabletype__message_has_error
+#: model:ir.model.fields,help:terralab.field_terralab_testvariabletype__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si está marcado, algunos mensajes tienen un error de entrega."
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet__import_date
+msgid "Import Date"
+msgstr "Fecha de importación"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet__import_status
+msgid "Import Status"
+msgstr "Estado de importación"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.spreadsheet_form
+msgid "Import Tests and Products"
+msgstr "Carga las pruebas y los productos"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "Invalidate TerraLab Order"
+msgstr "Invalida el pedido"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_confirmation
+msgid "Invoicing address:"
+msgstr "Dirección de facturación:"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_confirmation
+msgid "Invoicing and shipping address:"
+msgstr "Dirección de facturación y envío:"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_sampletype__message_is_follower
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet__message_is_follower
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__message_is_follower
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__message_is_follower
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__message_is_follower
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuse__message_is_follower
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__message_is_follower
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype__message_is_follower
+#: model:ir.model.fields,field_description:terralab.field_terralab_testvariabletype__message_is_follower
+msgid "Is Follower"
+msgstr "Es seguidor"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_sampletype____last_update
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet____last_update
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample____last_update
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest____last_update
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable____last_update
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuse____last_update
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange____last_update
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype____last_update
+#: model:ir.model.fields,field_description:terralab.field_terralab_testvariabletype____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_sampletype__write_uid
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet__write_uid
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__write_uid
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__write_uid
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__write_uid
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuse__write_uid
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__write_uid
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype__write_uid
+#: model:ir.model.fields,field_description:terralab.field_terralab_testvariabletype__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_sampletype__write_date
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet__write_date
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__write_date
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__write_date
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__write_date
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuse__write_date
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__write_date
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype__write_date
+#: model:ir.model.fields,field_description:terralab.field_terralab_testvariabletype__write_date
+msgid "Last Updated on"
+msgstr "Última actualización"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__location
+msgid "Location"
+msgstr "Ubicación"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.test_results_document
+msgid "Low ("
+msgstr "Bajo ("
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_sampletype__message_main_attachment_id
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet__message_main_attachment_id
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__message_main_attachment_id
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__message_main_attachment_id
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__message_main_attachment_id
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuse__message_main_attachment_id
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__message_main_attachment_id
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype__message_main_attachment_id
+#: model:ir.model.fields,field_description:terralab.field_terralab_testvariabletype__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Anexo principal"
+
+#. module: terralab
+#: model:ir.ui.menu,name:terralab.mass_edit_menuitem
+msgid "Mass Edit"
+msgstr "Editor masivo"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.test_results_document
+msgid "Media ("
+msgstr "Media ("
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_sampletype__message_has_error
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet__message_has_error
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__message_has_error
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__message_has_error
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__message_has_error
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuse__message_has_error
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__message_has_error
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype__message_has_error
+#: model:ir.model.fields,field_description:terralab.field_terralab_testvariabletype__message_has_error
+msgid "Message Delivery error"
+msgstr "Error en la entrega del mensaje"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_sampletype__message_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet__message_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__message_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__message_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__message_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuse__message_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__message_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype__message_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_testvariabletype__message_ids
+msgid "Messages"
+msgstr "Mensajes"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_filter
+msgid "Missing Results"
+msgstr "Resultados faltantes"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_variable_tree_filter
+msgid "Missing Values"
+msgstr "Valores faltantes"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_sampletype__name
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet__name
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__name
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__test_type_name
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__name
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuse__name
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__name
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype__name
+#: model:ir.model.fields,field_description:terralab.field_terralab_testvariabletype__name
+#: model_terms:ir.ui.view,arch_db:terralab.target_use_form_view
+#: model_terms:ir.ui.view,arch_db:terralab.test_form_view
+msgid "Name"
+msgstr "Nombre"
+
+#. module: terralab
+#: code:addons/terralab/models/submitted_sample.py:0
+#: model:ir.model.fields.selection,name:terralab.selection__terralab_submittedsample__status__new
+#, python-format
+msgid "New"
+msgstr "Nuevo"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_tree
+msgid "Next Action"
+msgstr "Próxima acción"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__num
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__num
+#: model:ir.model.fields,field_description:terralab.field_terralab_testvariabletype__num
+#: model_terms:ir.ui.view,arch_db:terralab.test_form_view
+msgid "Num"
+msgstr "Num"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__num_thresholds
+msgid "Num Thresholds"
+msgstr "Umbrales numéricos"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "Number"
+msgstr "Número"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_sampletype__message_needaction_counter
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet__message_needaction_counter
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__message_needaction_counter
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__message_needaction_counter
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__message_needaction_counter
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuse__message_needaction_counter
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__message_needaction_counter
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype__message_needaction_counter
+#: model:ir.model.fields,field_description:terralab.field_terralab_testvariabletype__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de acciones"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_sampletype__message_has_error_counter
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet__message_has_error_counter
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__message_has_error_counter
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__message_has_error_counter
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__message_has_error_counter
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuse__message_has_error_counter
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__message_has_error_counter
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype__message_has_error_counter
+#: model:ir.model.fields,field_description:terralab.field_terralab_testvariabletype__message_has_error_counter
+msgid "Number of errors"
+msgstr "Número de errores"
+
+#. module: terralab
+#: model:ir.model.fields,help:terralab.field_terralab_sampletype__message_needaction_counter
+#: model:ir.model.fields,help:terralab.field_terralab_spreadsheet__message_needaction_counter
+#: model:ir.model.fields,help:terralab.field_terralab_submittedsample__message_needaction_counter
+#: model:ir.model.fields,help:terralab.field_terralab_submittedtest__message_needaction_counter
+#: model:ir.model.fields,help:terralab.field_terralab_submittedtestvariable__message_needaction_counter
+#: model:ir.model.fields,help:terralab.field_terralab_targetuse__message_needaction_counter
+#: model:ir.model.fields,help:terralab.field_terralab_targetuserange__message_needaction_counter
+#: model:ir.model.fields,help:terralab.field_terralab_testtype__message_needaction_counter
+#: model:ir.model.fields,help:terralab.field_terralab_testvariabletype__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Número de mensajes que requieren una acción"
+
+#. module: terralab
+#: model:ir.model.fields,help:terralab.field_terralab_sampletype__message_has_error_counter
+#: model:ir.model.fields,help:terralab.field_terralab_spreadsheet__message_has_error_counter
+#: model:ir.model.fields,help:terralab.field_terralab_submittedsample__message_has_error_counter
+#: model:ir.model.fields,help:terralab.field_terralab_submittedtest__message_has_error_counter
+#: model:ir.model.fields,help:terralab.field_terralab_submittedtestvariable__message_has_error_counter
+#: model:ir.model.fields,help:terralab.field_terralab_targetuse__message_has_error_counter
+#: model:ir.model.fields,help:terralab.field_terralab_targetuserange__message_has_error_counter
+#: model:ir.model.fields,help:terralab.field_terralab_testtype__message_has_error_counter
+#: model:ir.model.fields,help:terralab.field_terralab_testvariabletype__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensajes con error de entrega"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.test_results_document
+msgid "Number of samples:"
+msgstr "Número de muestras:"
+
+#. module: terralab
+#: model:ir.model.fields,help:terralab.field_terralab_sampletype__message_unread_counter
+#: model:ir.model.fields,help:terralab.field_terralab_spreadsheet__message_unread_counter
+#: model:ir.model.fields,help:terralab.field_terralab_submittedsample__message_unread_counter
+#: model:ir.model.fields,help:terralab.field_terralab_submittedtest__message_unread_counter
+#: model:ir.model.fields,help:terralab.field_terralab_submittedtestvariable__message_unread_counter
+#: model:ir.model.fields,help:terralab.field_terralab_targetuse__message_unread_counter
+#: model:ir.model.fields,help:terralab.field_terralab_targetuserange__message_unread_counter
+#: model:ir.model.fields,help:terralab.field_terralab_testtype__message_unread_counter
+#: model:ir.model.fields,help:terralab.field_terralab_testvariabletype__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Número de mensajes no leídos"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__order
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__order
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__order
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_filter
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_variable_tree
+msgid "Order"
+msgstr "Pedido"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_confirmation
+msgid "Order #"
+msgstr "Pedido #"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_confirmation
+msgid "Order Confirmation"
+msgstr "Confirmación del pedido"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__order_line
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "Order Line"
+msgstr "Línea de pedidos"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__order_lines
+msgid "Order Lines"
+msgstr "Líneas de pedido"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__order_name
+msgid "Order Name"
+msgstr "Nombre de pedido"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_tree
+msgid "Order Number"
+msgstr "Número de pedido"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__order_name
+msgid "Order Reference"
+msgstr "Referencia de pedido"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_filter
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_variable_tree_filter
+msgid "Order Status Accepted"
+msgstr "Estado del pedido Aceptado"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_filter
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_variable_tree_filter
+msgid "Order Status Calculated"
+msgstr "Estado del pedido Calculado"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_filter
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_variable_tree_filter
+msgid "Order Status Completed"
+msgstr "Estado de la orden Completada"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_filter
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_variable_tree_filter
+msgid "Order Status Draft"
+msgstr "Estado del pedido Borrador"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_filter
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_variable_tree_filter
+msgid "Order Status Rejected"
+msgstr "Estado del pedido Rechazado"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_filter
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_variable_tree_filter
+msgid "Order Status Submitted"
+msgstr "Estado del pedido Enviado"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_filter
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_variable_tree_filter
+msgid "Order Status Validated"
+msgstr "Estado del pedido Validado"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__order_terralab_status
+msgid "Order Terralab Status"
+msgstr "Estatus del pedido en TerraLab"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.test_results_document
+msgid "Order number:"
+msgstr "Número de Pedido:"
+
+#. module: terralab
+#: model:ir.ui.menu,name:terralab.orders_list_menuitem
+msgid "Orders"
+msgstr "Pedidos"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_confirmation
+msgid "Pro-Forma Invoice #"
+msgstr "Factura Pro-forma #"
+
+#. module: terralab
+#: model:ir.model,name:terralab.model_product_category
+msgid "Product Category"
+msgstr "Categoría de producto"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.product_tree
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_sample_form
+msgid "Product Name"
+msgstr "Nombre del producto"
+
+#. module: terralab
+#: model:ir.model,name:terralab.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de producto"
+
+#. module: terralab
+#: model:ir.ui.menu,name:terralab.products_list_menuitem
+msgid "Products"
+msgstr "Productos"
+
+#. module: terralab
+#: code:addons/terralab/models/submitted_sample.py:0
+#: model:ir.model.fields.selection,name:terralab.selection__terralab_submittedsample__status__qa
+#, python-format
+msgid "QA"
+msgstr "QA"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_confirmation
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_confirmation
+msgid "Quotation #"
+msgstr "Presupuesto #"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "Recalculate TerraLab Test Results"
+msgstr "Calcula los resultados"
+
+#. module: terralab
+#: code:addons/terralab/models/submitted_sample.py:0
+#: model:ir.model.fields.selection,name:terralab.selection__terralab_submittedsample__status__received
+#, python-format
+msgid "Received"
+msgstr "Recibido"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__receive_date
+msgid "Received on"
+msgstr "Recibido el"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "Reject TerraLab Order"
+msgstr "Acepta o rechaza el pedido"
+
+#. module: terralab
+#: code:addons/terralab/models/order.py:0
+#: code:addons/terralab/models/submitted_test.py:0
+#: model:ir.model.fields.selection,name:terralab.selection__sale_order__terralab_status__rejected
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_filter
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_variable_tree_filter
+#, python-format
+msgid "Rejected"
+msgstr "Rechazado"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_sale_order__terralab_rejected_date
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "Rejected Date"
+msgstr "Fecha de rechazo"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.test_results_document
+msgid "Report Creation Date:"
+msgstr "Fecha de creación del informe:"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.test_results_document
+msgid "Report Print Out Date and User:"
+msgstr "Fecha de impresión del informe y usuario:"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "Report Text 1"
+msgstr "Texto del informe 1"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "Report Text 2"
+msgstr "Texto del informe 2"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "Report Text 3"
+msgstr "Texto del informe 3"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "Report Text 4"
+msgstr "Texto del informe 4"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "Reset to TerraLab Draft"
+msgstr "Cambia al borrador"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "Result"
+msgstr "Resultado"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+#: model_terms:ir.ui.view,arch_db:terralab.test_form_view
+msgid "Result Unit"
+msgstr "Unidad de resultados"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_sampletype__message_has_sms_error
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet__message_has_sms_error
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__message_has_sms_error
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__message_has_sms_error
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__message_has_sms_error
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuse__message_has_sms_error
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__message_has_sms_error
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype__message_has_sms_error
+#: model:ir.model.fields,field_description:terralab.field_terralab_testvariabletype__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Error de entrega de SMS"
+
+#. module: terralab
+#: model:ir.model,name:terralab.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: terralab
+#: model:ir.model,name:terralab.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea de pedido de venta"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.product_tree
+msgid "Sales Price"
+msgstr "Precio de venta"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__sample_id
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_sample_form
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_filter
+#: model_terms:ir.ui.view,arch_db:terralab.test_results_document
+msgid "Sample"
+msgstr "Muestra"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__sample_group
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_filter
+msgid "Sample Group"
+msgstr "Grupo de muestra"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_sample_form
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_sample_tree
+msgid "Sample ID"
+msgstr "ID de la muestra"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.test_results_document
+msgid "Sample ID:"
+msgstr "ID de la muestra:"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.test_results_document
+msgid "Sample Location:"
+msgstr "Ubicación de la muestra:"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__sample_type
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "Sample Type"
+msgstr "Tipo de muestra"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.sampletype_form
+msgid "Sample Type Form"
+msgstr "Formulario de tipo de muestra"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.test_results_document
+msgid "Sample Type:"
+msgstr "Tipo de muestra:"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype__sample_types
+#: model_terms:ir.ui.view,arch_db:terralab.test_form_view
+msgid "Sample Types"
+msgstr "Tipos de muestras"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.test_results_document
+msgid "Sample Volume:"
+msgstr "Volumen de la muestra:"
+
+#. module: terralab
+#: model:ir.ui.menu,name:terralab.sample_types_list_menuitem
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+#: model_terms:ir.ui.view,arch_db:terralab.order_tree
+msgid "Samples"
+msgstr "Muestras"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__serial_number
+msgid "Serial Number"
+msgstr "Número de serie"
+
+#. module: terralab
+#: code:addons/terralab/models/submitted_sample.py:0
+#, python-format
+msgid "Set sample ID for submitted sample %s"
+msgstr "Establecer el ID de la muestra presentada %s"
+
+#. module: terralab
+#: code:addons/terralab/models/submitted_sample.py:0
+#, python-format
+msgid "Set sample type for submitted sample %s"
+msgstr "Establecer el tipo de muestra para la muestra presentada %s"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_product_category__terralab_spreadsheet
+#: model:ir.model.fields,field_description:terralab.field_product_product__terralab_spreadsheet
+#: model:ir.model.fields,field_description:terralab.field_product_template__terralab_spreadsheet
+#: model:ir.model.fields,field_description:terralab.field_terralab_sampletype__spreadsheet
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet__spreadsheet_id
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuse__spreadsheet
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__spreadsheet
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype__spreadsheet
+#: model:ir.model.fields,field_description:terralab.field_terralab_testvariabletype__spreadsheet
+#: model_terms:ir.ui.view,arch_db:terralab.categories_tree
+#: model_terms:ir.ui.view,arch_db:terralab.target_use_form_view
+#: model_terms:ir.ui.view,arch_db:terralab.test_form_view
+msgid "Spreadsheet"
+msgstr "Hoja de cálculo"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.spreadsheet_form
+msgid "Spreadsheet Form"
+msgstr "Formulario de hoja de cálculo"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.spreadsheet_form
+msgid "Spreadsheet ID"
+msgstr "ID en hoja de cálculo"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.spreadsheet_form
+msgid "Spreadsheet URL"
+msgstr "URL de hoja de cálculo"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet__spreadsheet_url
+msgid "Spreadsheet Url"
+msgstr "URL de hoja de cálculo"
+
+#. module: terralab
+#: code:addons/terralab/models/spreadsheet/import_all.py:0
+#, python-format
+msgid "Spreadsheet imported successfully."
+msgstr "Hoja de cálculo importada con éxito."
+
+#. module: terralab
+#: model:ir.ui.menu,name:terralab.spreadsheets_list_menuitem
+msgid "Spreadsheets"
+msgstr "Hojas de calculos"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__status
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_tree
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_variable_tree
+msgid "Status"
+msgstr "Estatus"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "Submit TerraLab Order"
+msgstr "Envía el pedido"
+
+#. module: terralab
+#: code:addons/terralab/models/order.py:0
+#, python-format
+msgid "Submit order"
+msgstr "Envía el pedido"
+
+#. module: terralab
+#: code:addons/terralab/models/order.py:0
+#: code:addons/terralab/models/submitted_test.py:0
+#: model:ir.model.fields.selection,name:terralab.selection__sale_order__terralab_status__submitted
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_filter
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_variable_tree_filter
+#, python-format
+msgid "Submitted"
+msgstr "Enviado"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_sale_order__terralab_submitted_date
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "Submitted Date"
+msgstr "Fecha Envío"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_sale_order_line__terralab_submitted_sample
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__submitted_sample
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__submitted_sample
+msgid "Submitted Sample"
+msgstr "Muestra enviada"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_sample_form
+msgid "Submitted Sample Form"
+msgstr "Formulario de muestra presentado"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_sampletype__submitted_samples
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__submitted_samples
+msgid "Submitted Samples"
+msgstr "Muestras enviadas"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__submitted_test
+msgid "Submitted Test"
+msgstr "Prueba presentado"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_form
+msgid "Submitted Test Form"
+msgstr "Formulario de prueba presentado"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_form
+msgid "Submitted Test Settings"
+msgstr "Configuración de la prueba presentada"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_variable_form
+msgid "Submitted Test Variable Form"
+msgstr "Formulario de la variable de prueba presentada"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__submitted_test_variables
+#: model:ir.model.fields,field_description:terralab.field_terralab_testvariabletype__submitted_test_variables
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_form
+msgid "Submitted Test Variables"
+msgstr "Cambiantes de prueba"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_sale_order_line__terralab_submitted_tests
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__submitted_tests
+msgid "Submitted Tests"
+msgstr "Pruebas presentadas"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.test_results_document
+msgid "TARGET USE:"
+msgstr "Uso objetivo:"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__target_use
+#: model:ir.ui.menu,name:terralab.target_use_list_menuitem
+#: model_terms:ir.ui.view,arch_db:terralab.target_use_form_view
+msgid "Target Use"
+msgstr "Uso objetivo"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.target_use_form_view
+msgid "Target Use Form"
+msgstr "Formulario de uso del objetivo"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__target_use_ranges
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuse__target_use_ranges
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_sample_form
+#: model_terms:ir.ui.view,arch_db:terralab.target_use_form_view
+msgid "Target Use Ranges"
+msgstr "Rangos de uso objetivo"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_confirmation
+msgid "Taxes"
+msgstr "Impuestos"
+
+#. module: terralab
+#: model:ir.ui.menu,name:terralab.menu_root
+#: model_terms:ir.ui.view,arch_db:terralab.common_header
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "TerraLab"
+msgstr "Terralab"
+
+#. module: terralab
+#: model:res.groups,name:terralab.admin_group
+msgid "TerraLab Admin"
+msgstr "Administración de TerraLab"
+
+#. module: terralab
+#: model:ir.actions.act_window,name:terralab.categories_list_action
+msgid "TerraLab Categories"
+msgstr "Categorías de TerraLab"
+
+#. module: terralab
+#: model:ir.actions.report,name:terralab.action_terralab_order_confirmation
+msgid "TerraLab Default Order Confirmation"
+msgstr "Confirmación de pedido por defecto de TerraLab"
+
+#. module: terralab
+#: model:ir.actions.report,name:terralab.action_terralab_test_results
+msgid "TerraLab Default Test Results"
+msgstr "Informe estándar de resultados de pruebas"
+
+#. module: terralab
+#: model:ir.actions.act_window,name:terralab.mass_edit_tests_grouped_by_sample_action
+#: model:ir.actions.act_window,name:terralab.mass_edit_tests_grouped_by_test_type_action
+msgid "TerraLab Mass Edit Tests"
+msgstr "Editor masivo"
+
+#. module: terralab
+#: model:ir.actions.act_window,name:terralab.products_list_action
+msgid "TerraLab Products"
+msgstr "Productos TerraLab"
+
+#. module: terralab
+#: model:ir.model,name:terralab.model_terralab_sampletype
+msgid "TerraLab Sample Type"
+msgstr "Terralab tipo de muestra"
+
+#. module: terralab
+#: model:ir.actions.act_window,name:terralab.sample_types_list_action
+msgid "TerraLab Sample Types"
+msgstr "Tipos de muestras de TerraLab"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_sale_order__terralab_submitted_samples
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "TerraLab Samples"
+msgstr "Muestras de Terralab"
+
+#. module: terralab
+#: model:ir.model,name:terralab.model_terralab_spreadsheet
+msgid "TerraLab Spreadsheet"
+msgstr "Hoja de cálculo de Terralab"
+
+#. module: terralab
+#: model:ir.actions.act_window,name:terralab.spreadsheets_list_action
+msgid "TerraLab Spreadsheets"
+msgstr "Hojas de cálculo de TerraLab"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_sale_order__terralab_status
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__order_terralab_status
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "TerraLab Status"
+msgstr "Estatus de Terralab"
+
+#. module: terralab
+#: model:ir.model,name:terralab.model_terralab_submittedsample
+msgid "TerraLab Submitted Sample"
+msgstr "Muestra presentada por TerraLab"
+
+#. module: terralab
+#: model:ir.model,name:terralab.model_terralab_submittedtest
+msgid "TerraLab Submitted Test"
+msgstr "Prueba de presentado en TerraLab"
+
+#. module: terralab
+#: model:ir.model,name:terralab.model_terralab_submittedtestvariable
+msgid "TerraLab Submitted Test Variable"
+msgstr "Variable de prueba presentada por TerraLab"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_form
+msgid "TerraLab Submitted Test Variables"
+msgstr "Cambiantes de prueba enviadas por TerraLab"
+
+#. module: terralab
+#: model:ir.actions.act_window,name:terralab.target_use_list_action
+#: model:ir.model,name:terralab.model_terralab_targetuse
+msgid "TerraLab Target Use"
+msgstr "Uso del objetivo de TerraLab"
+
+#. module: terralab
+#: model:ir.model,name:terralab.model_terralab_targetuserange
+msgid "TerraLab Target Use Range"
+msgstr "Rango de uso objectivo de TerraLab"
+
+#. module: terralab
+#: model:ir.model,name:terralab.model_terralab_testtype
+msgid "TerraLab Test"
+msgstr "Prueba de Terralab"
+
+#. module: terralab
+#: model:ir.actions.act_window,name:terralab.test_types_list_action
+msgid "TerraLab Test Types"
+msgstr "Tipos de pruebas de TerraLab"
+
+#. module: terralab
+#: model:ir.model,name:terralab.model_terralab_testvariabletype
+msgid "TerraLab Test Variable Type"
+msgstr "Tipo de variable de prueba de TerraLab"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_sale_order__terralab_submitted_test_variables
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "TerraLab Test Variables"
+msgstr "Cambiantes de prueba en TerraLab"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_sale_order__terralab_submitted_tests
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+#: model_terms:ir.ui.view,arch_db:terralab.product_form_view
+msgid "TerraLab Tests"
+msgstr "Pruebas de TerraLab"
+
+#. module: terralab
+#: model:res.groups,name:terralab.user_group
+msgid "TerraLab User"
+msgstr "Usuario de TerraLab"
+
+#. module: terralab
+#: code:addons/terralab/models/order.py:0
+#, python-format
+msgid ""
+"TerraLab added %s order line(s) with %s test(s) and %s test variable(s) to "
+"this order."
+msgstr ""
+"TerraLab ha añadido %s línea(s) de pedido con %s prueba(s) y %s variable(s) "
+"de prueba a este pedido."
+
+#. module: terralab
+#: code:addons/terralab/models/spreadsheet/import_demo_orders.py:0
+#, python-format
+msgid "TerraLab generated spreadsheet demo orders successfully."
+msgstr ""
+"TerraLab ha generado con éxito los pedidos de demostración desde la hoja de "
+"cálculo."
+
+#. module: terralab
+#: code:addons/terralab/models/spreadsheet/import_all.py:0
+#, python-format
+msgid "TerraLab imported spreadsheet contents successfully."
+msgstr "TerraLab ha importado el contenido de la hoja de cálculo con éxito."
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_tree_filter
+msgid "Terralab Accepted"
+msgstr "Terralab Aceptado"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_tree_filter
+msgid "Terralab Calculated"
+msgstr "Terralab Calculado"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_tree_filter
+msgid "Terralab Completed"
+msgstr "Terralab Completado"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_tree_filter
+msgid "Terralab Completeds"
+msgstr "TerraLab Completeds"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_product_category__terralab_default_code
+msgid "Terralab Default Code"
+msgstr "Código por defecto de Terralab"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_tree_filter
+msgid "Terralab Draft"
+msgstr "Borrador de Terralab"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_sale_order__terralab_next_action
+msgid "Terralab Next Action"
+msgstr "Terralab Proxima accion"
+
+#. module: terralab
+#: model:ir.actions.act_window,name:terralab.orders_list_action
+msgid "Terralab Orders"
+msgstr "Pedidos de Terralab"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_tree_filter
+msgid "Terralab Rejected"
+msgstr "Terralab Rechazado"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_sale_order__terralab_report_text_1
+msgid "Terralab Report Text 1"
+msgstr "Informe Terralab Texto 1"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_sale_order__terralab_report_text_2
+msgid "Terralab Report Text 2"
+msgstr "Informe Terralab Texto 2"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_sale_order__terralab_report_text_3
+msgid "Terralab Report Text 3"
+msgstr "Informe Terralab Texto 3"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_sale_order__terralab_report_text_4
+msgid "Terralab Report Text 4"
+msgstr "Informe Terralab Texto 4"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_tree_filter
+msgid "Terralab Submitted"
+msgstr "Terralab Enviado"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_sale_order__terralab_submitted_samples_count
+msgid "Terralab Submitted Samples Count"
+msgstr "Recuento de muestras enviadas por Terralab"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_sale_order__terralab_submitted_test_variables_count
+msgid "Terralab Submitted Test Variables Count"
+msgstr "Recuento de cambiantes de prueba presentadas por Terralab"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_sale_order__terralab_submitted_tests_count
+msgid "Terralab Submitted Tests Count"
+msgstr "Recuento de pruebas enviadas por Terralab"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_product_product__terralab_test_types
+#: model:ir.model.fields,field_description:terralab.field_product_template__terralab_test_types
+msgid "Terralab Test Types"
+msgstr "Tipos de pruebas Terralab"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_product_product__terralab_test_types_count
+#: model:ir.model.fields,field_description:terralab.field_product_template__terralab_test_types_count
+msgid "Terralab Test Types Count"
+msgstr "Recuento de tipos de prueba Terralab"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_tree_filter
+msgid "Terralab Validated"
+msgstr "Terralab Validado"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "Test"
+msgstr "Prueba"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.test_form_view
+msgid "Test Form"
+msgstr "Formulario de prueba"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.product_form_view
+msgid "Test Name"
+msgstr "Nombre de prueba"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet__test_products
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__test_products
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype__test_products
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_sample_form
+msgid "Test Products"
+msgstr "Productos de prueba"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__test_result
+msgid "Test Result"
+msgstr "Resultado de prueba"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__test_result_uom_name
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype__test_result_uom_name
+msgid "Test Result Uom Name"
+msgstr "Unidad de medida (UOM) de resultado de la prueba"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__test_type
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__test_type
+#: model:ir.model.fields,field_description:terralab.field_terralab_testvariabletype__test_type
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_filter
+#: model_terms:ir.ui.view,arch_db:terralab.target_use_form_view
+msgid "Test Type"
+msgstr "Tipo de prueba"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_sampletype__test_types
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet__test_types
+msgid "Test Types"
+msgstr "Tipos de pruebas"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__test_variable_type
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "Test Variable Type"
+msgstr "Tipo de cambiantes de prueba"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.test_variable_type_form
+msgid "Test Variable Type Form"
+msgstr "Formulario de tipo de cambiante de prueba"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype__test_variable_types
+#: model_terms:ir.ui.view,arch_db:terralab.test_form_view
+msgid "Test Variable Types"
+msgstr "Cambiantes de las pruebas"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+#: model_terms:ir.ui.view,arch_db:terralab.order_tree
+msgid "Test Variables"
+msgstr "Cambiantes de pruebas"
+
+#. module: terralab
+#: code:addons/terralab/models/submitted_sample.py:0
+#: model:ir.model.fields.selection,name:terralab.selection__terralab_submittedsample__status__testing
+#, python-format
+msgid "Testing"
+msgstr "Prueba"
+
+#. module: terralab
+#: model:ir.ui.menu,name:terralab.test_types_list_menuitem
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+#: model_terms:ir.ui.view,arch_db:terralab.order_tree
+msgid "Tests"
+msgstr "Pruebas"
+
+#. module: terralab
+#: model:ir.ui.menu,name:terralab.mass_edit_tests_grouped_by_sample_menuitem
+msgid "Tests Grouped by Sample"
+msgstr "Pruebas agrupadas por muestra"
+
+#. module: terralab
+#: model:ir.ui.menu,name:terralab.mass_edit_tests_grouped_by_test_type_menuitem
+msgid "Tests Grouped by Test Type"
+msgstr "Pruebas agrupadas por tipo de prueba"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__threshold_1
+#: model_terms:ir.ui.view,arch_db:terralab.target_use_form_view
+msgid "Threshold 1"
+msgstr "Umbral 1"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__threshold_2
+#: model_terms:ir.ui.view,arch_db:terralab.target_use_form_view
+msgid "Threshold 2"
+msgstr "Umbral 2"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__threshold_3
+#: model_terms:ir.ui.view,arch_db:terralab.target_use_form_view
+msgid "Threshold 3"
+msgstr "Umbral 3"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__threshold_4
+#: model_terms:ir.ui.view,arch_db:terralab.target_use_form_view
+msgid "Threshold 4"
+msgstr "Umbral 4"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__threshold_5
+#: model_terms:ir.ui.view,arch_db:terralab.target_use_form_view
+msgid "Threshold 5"
+msgstr "Umbral 5"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.target_use_form_view
+msgid "Thresholds"
+msgstr "Umbrales"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_confirmation
+msgid "Total Price"
+msgstr "Precio total"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_1_type
+msgid "Type 1"
+msgstr "Tipo 1"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_10_type
+msgid "Type 10"
+msgstr "Tipo 10"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_2_type
+msgid "Type 2"
+msgstr "Tipo 2"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_3_type
+msgid "Type 3"
+msgstr "Tipo 3"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_4_type
+msgid "Type 4"
+msgstr "Tipo 4"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_5_type
+msgid "Type 5"
+msgstr "Tipo 5"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_6_type
+msgid "Type 6"
+msgstr "Tipo 6"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_7_type
+msgid "Type 7"
+msgstr "Tipo7"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_8_type
+msgid "Type 8"
+msgstr "Tipo 8"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_9_type
+msgid "Type 9"
+msgstr "Tipo 9"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_confirmation
+msgid "Unit Price"
+msgstr "Precio unitario"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_sampletype__message_unread
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet__message_unread
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__message_unread
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__message_unread
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__message_unread
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuse__message_unread
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__message_unread
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype__message_unread
+#: model:ir.model.fields,field_description:terralab.field_terralab_testvariabletype__message_unread
+msgid "Unread Messages"
+msgstr "Número de mensajes no leídos"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_sampletype__message_unread_counter
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet__message_unread_counter
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__message_unread_counter
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__message_unread_counter
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__message_unread_counter
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuse__message_unread_counter
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__message_unread_counter
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype__message_unread_counter
+#: model:ir.model.fields,field_description:terralab.field_terralab_testvariabletype__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Número de mensajes no leídos"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "Validate TerraLab Order"
+msgstr "Validar el pedido de TerraLab"
+
+#. module: terralab
+#: code:addons/terralab/models/order.py:0
+#, python-format
+msgid "Validate test results"
+msgstr "Validar los resultados de las pruebas"
+
+#. module: terralab
+#: code:addons/terralab/models/order.py:0
+#: code:addons/terralab/models/submitted_sample.py:0
+#: code:addons/terralab/models/submitted_test.py:0
+#: model:ir.model.fields.selection,name:terralab.selection__sale_order__terralab_status__validated
+#: model:ir.model.fields.selection,name:terralab.selection__terralab_submittedsample__status__validated
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_filter
+#: model_terms:ir.ui.view,arch_db:terralab.submitted_test_variable_tree_filter
+#, python-format
+msgid "Validated"
+msgstr "Validado"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_sale_order__terralab_validated_date
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "Validated Date"
+msgstr "Fecha de validación"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__value
+#: model_terms:ir.ui.view,arch_db:terralab.order_form_view
+msgid "Value"
+msgstr "Valor"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_1_value
+msgid "Value 1"
+msgstr "Valor 1"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_10_value
+msgid "Value 10"
+msgstr "Valor 10"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_2_value
+msgid "Value 2"
+msgstr "Valor 2"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_3_value
+msgid "Value 3"
+msgstr "Valor 3"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_4_value
+msgid "Value 4"
+msgstr "Valor 4"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_5_value
+msgid "Value 5"
+msgstr "Valor 5"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_6_value
+msgid "Value 6"
+msgstr "Valor 6"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_7_value
+msgid "Value 7"
+msgstr "Valor 7"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_8_value
+msgid "Value 8"
+msgstr "Valor 8"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_9_value
+msgid "Value 9"
+msgstr "Valor 9"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_1
+msgid "Var 1"
+msgstr "Cambiante 1"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_10
+msgid "Var 10"
+msgstr "Cambiante 10"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_2
+msgid "Var 2"
+msgstr "Cambiante 2"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_3
+msgid "Var 3"
+msgstr "Cambiante 3"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_4
+msgid "Var 4"
+msgstr "Cambiante 4"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_5
+msgid "Var 5"
+msgstr "Cambiante 5"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_6
+msgid "Var 6"
+msgstr "Cambiante 6"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_7
+msgid "Var 8"
+msgstr "Cambiante 8"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__var_9
+msgid "Var 9"
+msgstr "Cambiante 9"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.test_form_view
+msgid "Variable Name"
+msgstr "Nombre de cambiante"
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.test_results_document
+msgid "Very high ("
+msgstr "Myu alto ("
+
+#. module: terralab
+#: model_terms:ir.ui.view,arch_db:terralab.test_results_document
+msgid "Very low ("
+msgstr "Muy bajo ("
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__volume
+msgid "Volume"
+msgstr "Volumen"
+
+#. module: terralab
+#: model:ir.model.fields,field_description:terralab.field_terralab_sampletype__website_message_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_spreadsheet__website_message_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedsample__website_message_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtest__website_message_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_submittedtestvariable__website_message_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuse__website_message_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_targetuserange__website_message_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_testtype__website_message_ids
+#: model:ir.model.fields,field_description:terralab.field_terralab_testvariabletype__website_message_ids
+msgid "Website Messages"
+msgstr "Mensajes del sitio web"
+
+#. module: terralab
+#: model:ir.model.fields,help:terralab.field_terralab_sampletype__website_message_ids
+#: model:ir.model.fields,help:terralab.field_terralab_spreadsheet__website_message_ids
+#: model:ir.model.fields,help:terralab.field_terralab_submittedsample__website_message_ids
+#: model:ir.model.fields,help:terralab.field_terralab_submittedtest__website_message_ids
+#: model:ir.model.fields,help:terralab.field_terralab_submittedtestvariable__website_message_ids
+#: model:ir.model.fields,help:terralab.field_terralab_targetuse__website_message_ids
+#: model:ir.model.fields,help:terralab.field_terralab_targetuserange__website_message_ids
+#: model:ir.model.fields,help:terralab.field_terralab_testtype__website_message_ids
+#: model:ir.model.fields,help:terralab.field_terralab_testvariabletype__website_message_ids
+msgid "Website communication history"
+msgstr "Historia de la comunicación en la web"
